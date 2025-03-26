@@ -10,7 +10,7 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 0.75fr 4fr;
 }
 /*
 .header {
@@ -38,7 +38,6 @@
     list-style: none;
     gap: 1rem;
     display: flex;
-
     flex-direction: row;
 }
 
@@ -54,6 +53,29 @@
     background-color: aqua;
     grid-column: 1/2;
     grid-row: 1/4;
+    padding: 1rem;
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.profile-buttons,.settings-buttons-container {
+    padding-bottom: 2rem;
+}
+
+.profile-buttons>ul>li,.settings-buttons-container>ul>li {
+    font-weight: bold;
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .main-content {
