@@ -57,25 +57,32 @@
 }
 
 .sidebar-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: bolder;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .profile-buttons,.settings-buttons-container {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .profile-buttons>ul>li,.settings-buttons-container>ul>li {
+    font-size: 1.4rem;
     font-weight: bold;
     list-style: none;
-    padding: 0.5rem;
-    font-size: 1.2rem;
+}
+
+ul>li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .main-content {
