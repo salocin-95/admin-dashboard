@@ -49,6 +49,11 @@
     grid-row: 1/3;
 }
 
+.user-related-search {
+    display: flex;
+    gap: 1rem;
+}
+
 .sidebar {
     background-color: aqua;
     grid-column: 1/2;
