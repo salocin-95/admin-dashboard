@@ -165,7 +165,7 @@ ul>li {
     padding: 2rem 0 0 1rem;
 }
 
-.announcements-section-title {
+.announcements-section-title,.trending-section-title {
     margin-top: 1rem;
     font-size: 1.2rem;
     padding: 2rem 0 0 1rem;
