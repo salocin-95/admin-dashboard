@@ -12,22 +12,33 @@
     display: grid;
     grid-template-columns: 0.75fr 4fr;
 }
-/*
-.header {
-    background-color: red;
-    grid-row: 1/3;
-}
-*/
+
 .searchbar {
     display: flex;
-    justify-content: space-between  ;
-    margin: 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 4rem; 
 }
+
+.searchbar-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.searchbar-bar>input {
+    width: 750px;
+    height: 2rem;
+    border-radius: 15px;
+    outline: none;
+}
+
 
 .header-profile {
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1rem 4rem;
 }
 
 .user-content-container {
@@ -46,7 +57,7 @@
     grid-template-rows: 1fr 1fr;
     background-color: red;
     padding: 1rem;
-    grid-row: 1/3;
+    grid-row: 1/2;
 }
 
 .user-related-search {
@@ -92,11 +103,10 @@ ul>li {
 
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-
     grid-column: 2/4;
-    grid-row: 3/4;
+    grid-row: 2/4;
 }
 
 .projects {
@@ -121,10 +131,30 @@ ul>li {
 
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: inset 10px 0px #060606;
+    margin: 1rem;
+    padding: 3rem 2rem;
+}
+
+.card::after {
+    content: "";
+    color: black;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 
 .announcements-container {
+    margin: 1rem;
+    padding: 3rem 2rem;
+    border-radius: 10px;
     background-color: aqua;
 }
 
@@ -138,10 +168,14 @@ ul>li {
 }
 
 .projects-section-title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 2rem 0 0 1rem;
     grid-column: 1/3;
 }
 
-.card {
-    margin: 1rem;
-    padding: 1rem;
+.announcements-section-title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 2rem 0 0 1rem;
 }
