@@ -103,13 +103,20 @@ ul>li {
 
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-row: 2/4;
-    margin: 1rem 1rem 3rem 1rem;
+    margin: 2rem 3rem 4rem 1rem;
 }
 
 .section-container {
     height: 100%;
+}
+
+.social-section-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .projects {
@@ -132,24 +139,24 @@ ul>li {
 }
 
 .social-media {
-    grid-column: 2/2;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    justify-content: stretch;
+    display: flex;
+    flex-direction: column;
 }
 
 .announcements-container {
-    margin: 1rem;
+    height: 100%;
     background-color: violet;
-    padding: 1rem;
     border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .trending-container {
-    margin: 1rem;
+    height: 100%;
     background-color: turquoise;
-    padding: 1rem;
     border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 1rem 0rem 1rem;
 }
 
 h1 {
